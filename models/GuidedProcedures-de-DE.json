@@ -1,0 +1,257 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "ablauf anleitung",
+      "intents": [
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "StartProcedureIntent",
+          "slots": [
+            {
+              "name": "Procedure",
+              "type": "LIST_OF_PROCEDURES"
+            }
+          ],
+          "samples": [
+            "Starte {Procedure}",
+            "Starte {Procedure} Hilfe",
+            "Ich möchte {Procedure}",
+            "Ich will {Procedure}",
+            "Ich will meine {Procedure}",
+            "Ich möchte meine {Procedure}",
+            "{Procedure}"
+          ]
+        },
+        {
+          "name": "NextStepIntent",
+          "samples": [
+            "Weiter",
+            "Ok das habe ich gemacht",
+            "Das habe ich gemacht",
+            "Das habe ich erledigt",
+            "Nächste Anweisung",
+            "Nächster Schritt"
+          ]
+        },
+        {
+          "name": "RepeatStepIntent",
+          "slots": [
+            {
+              "name": "Repeat_Modifier",
+              "type": "LIST_OF_REPEAT_STEP_MODIFIERS"
+            }
+          ],
+          "samples": [
+            "Wiederhole",
+            "Wiederhole das {Repeat_Modifier}",
+            "Wiederhole das nocheinmal {Repeat_Modifier}",
+            "Sage das nocheinmal {Repeat_Modifier}",
+            "Wie bitte {Repeat_Modifier}",
+            "Wie {Repeat_Modifier}"
+          ]
+        },
+        {
+          "name": "ListProceduresIntent",
+          "slots": [
+            {
+              "name": "Procedures_Synonym",
+              "type": "LIST_OF_PROCEDURE_SYNONYMS_PLURAL"
+            },
+            {
+              "name": "List_Modifier",
+              "type": "LIST_OF_LIST_PROCEDURES_MODIFIERS"
+            }
+          ],
+          "samples": [
+            "Liste mit {List_Modifier} meinen {Procedures_Synonym}",
+            "Liste meine {List_Modifier} {Procedures_Synonym} auf",
+            "Nenne die {List_Modifier} {Procedures_Synonym}",
+            "Nenne meine {List_Modifier} {Procedures_Synonym}"
+          ]
+        },
+        {
+          "name": "CancelIntent",
+          "slots": [
+            {
+              "name": "Procedure_Synonym",
+              "type": "LIST_OF_PROCEDURE_SYNONYMS_SINGULAR"
+            }
+          ],
+          "samples": [
+            "Stoppe das Vorhaben {Procedure_Synonym}",
+            "Stoppe den Vorgang {Procedure_Synonym}",
+            "Stoppe die Prozedur {Procedure_Synonym}",
+            "Das Vorhaben abbrechen",
+            "Den Vorgang abbrechen",
+            "Die Prozedur abbrechen",
+            "Das Vorhaben anhalten",
+            "Den Vorgang anhalten",
+            "Die Prozedur anhalten",
+            "{Procedure_Synonym} stoppen",
+            "{Procedure_Synonym} abbrechen",
+            "{Procedure_Synonym} anhalten",
+            "abbruch",
+            "vergiss es",
+            "ciao"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "LIST_OF_PROCEDURES",
+          "values": [
+            {
+              "name": {
+                "value": "wohnung verlassen"
+              }
+            },
+            {
+              "name": {
+                "value": "medikamente nehmen"
+              }
+            }
+          ]
+        },
+        {
+          "name": "LIST_OF_PROCEDURE_SYNONYMS_PLURAL",
+          "values": [
+            {
+              "name": {
+                "value": "Vorgänge"
+              }
+            },
+            {
+              "name": {
+                "value": "Vorhaben"
+              }
+            },
+            {
+              "name": {
+                "value": "Prozeduren"
+              }
+            }
+          ]
+        },
+        {
+          "name": "LIST_OF_PROCEDURE_SYNONYMS_SINGULAR",
+          "values": [
+            {
+              "name": {
+                "value": "Vorgang"
+              }
+            },
+            {
+              "name": {
+                "value": "Vorhaben"
+              }
+            },
+            {
+              "name": {
+                "value": "Prozedur"
+              }
+            }
+          ]
+        },
+        {
+          "name": "LIST_OF_LIST_PROCEDURES_MODIFIERS",
+          "values": [
+            {
+              "name": {
+                "value": "alle"
+              }
+            }
+          ]
+        },
+        {
+          "name": "LIST_OF_REPEAT_STEP_MODIFIERS",
+          "values": [
+            {
+              "name": {
+                "value": "langsam"
+              }
+            },
+            {
+              "name": {
+                "value": "langsamer"
+              }
+            },
+            {
+              "name": {
+                "value": "sehr langsam"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "StartProcedureIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.131582078562"
+          },
+          "slots": [
+            {
+              "name": "Procedure",
+              "type": "LIST_OF_PROCEDURES",
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "prompts": {
+                "elicitation": "Elicit.Slot.131582078562.671006431195"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.131582078562.671006431195",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Bitte sage mir bei was du Hilfe brauchst"
+          },
+          {
+            "type": "PlainText",
+            "value": "Welche Hilfe brauchst du?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Mit was kann ich dir heute helfen?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.131582078562",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Ich habe {Procedure} verstanden. "
+          }
+        ]
+      }
+    ]
+  }
+}

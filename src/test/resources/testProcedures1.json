@@ -1,0 +1,71 @@
+{
+  "userData": {
+    "procedures": [
+      {
+        "procedureName": "test1",
+        "steps": [
+          {
+            "stepNr": 1,
+            "stepName": "Schritt1",
+            "responseText": "Mache den ersten Schritt"
+          },
+          {
+            "stepNr": 2,
+            "stepName": "Schritt2",
+            "responseText": "Mache den zweiten Schritt"
+          }
+        ]
+      },
+      {
+        "procedureName": "test2",
+        "steps": [
+          {
+            "stepNr": 1,
+            "stepName": "Schritt1",
+            "responseText": "Mache den ersten Schritt",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 2,
+            "stepName": "Schritt2",
+            "responseText": "Mache den zweiten Schritt",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 3,
+            "stepName": "Schritt3",
+            "responseText": "Mache den dritten Schritt",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 4,
+            "stepName": "Schritt4",
+            "responseText": "Mache den vierten Schritt",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 5,
+            "stepName": "Schritt5",
+            "responseText": "Mache den fünften Schritt",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 6,
+            "stepName": "Schritt6",
+            "responseText": "Mache den sechsten Schritt",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 7,
+            "stepName": "Schritt7",
+            "responseText": "Mache den siebten Schritt",
+            "confirmationTime": 30
+          }
+        ]
+      }
+    ],
+    "configuration": {
+      "speed": 1
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "userData": {
+    "procedures": [
+      {
+        "procedureName": "wohnung Verlassen",
+        "steps": [
+          {
+            "stepNr": 1,
+            "stepName": "Fenster",
+            "responseText": "überprüfen sie, ob das fenster geschloßen sind",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 2,
+            "stepName": "Herd",
+            "responseText": "überprüfen sie, ob der Herd aus ist",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 3,
+            "stepName": "Fernseher",
+            "responseText": "nicht vergessen, den Fernseher auszuschalten",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 4,
+            "stepName": "Geldbeutel",
+            "responseText": "Geldbeutel in die Hosentasche legen",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 5,
+            "stepName": "Handy",
+            "responseText": "Handy in die Hosentasche legen",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 6,
+            "stepName": "Jacke",
+            "responseText": "Jacke anziehen",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 7,
+            "stepName": "Tür schließen",
+            "responseText": "Vergesse nicht die Haustür zu schließen. Einen schönen Tag",
+            "confirmationTime": 30
+          }
+        ]
+      },
+      {
+        "procedureName": "medikamente nehmen",
+        "steps": [
+          {
+            "stepNr": 1,
+            "stepName": "eins",
+            "responseText": "ihr tablettenbox ist im oberen rechten Schrank in der Küche. legen sie den tablettenbox auf den Tisch",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 2,
+            "stepName": "zwei",
+            "responseText": "füllen sie ein glass mit wasser und stellen sie es neben dem tablettenbox auf den tisch.",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 3,
+            "stepName": "drei",
+            "responseText": "nehmen sie medikament #1 mit einem schluck wasser ein",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 4,
+            "stepName": "vier",
+            "responseText": "nehmen sie medikament #2 mit einem schluck wasser ein",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 5,
+            "stepName": "fuenf",
+            "responseText": "überprüfen sie, ob ihr tablettenbox leer ist",
+            "confirmationTime": 30
+          },
+          {
+            "stepNr": 6,
+            "stepName": "sechs",
+            "responseText": "legen sie den tablettenbox in den rechten oberen schrank in der küche",
+            "confirmationTime": 30
+          }
+        ]
+      }
+    ],
+    "configuration": {
+      "speed": 1
+    }
+  }
+}

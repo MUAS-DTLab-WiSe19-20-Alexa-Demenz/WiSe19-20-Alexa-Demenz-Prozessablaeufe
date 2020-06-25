@@ -1,0 +1,39 @@
+{
+  "userData": {
+    "procedures": [
+      {
+        "procedureName": "test1",
+        "steps": [
+          {
+            "stepNr": 1,
+            "stepName": "Schritt1",
+            "responseText": "Mache den ersten Schritt"
+          },
+          {
+            "stepNr": 1,
+            "stepName": "Schritt2",
+            "responseText": "Mache den zweiten Schritt"
+          }
+        ]
+      },
+      {
+        "procedureName": "test2",
+        "steps": [
+          {
+            "stepNr": 1,
+            "stepName": "Schritt1",
+            "responseText": "Mache den ersten Schritt"
+          },
+          {
+            "stepNr": 2,
+            "stepName": "Schritt1",
+            "responseText": "Mache den zweiten Schritt"
+          }
+        ]
+      }
+    ],
+    "configuration": {
+      "speed": 1
+    }
+  }
+}
